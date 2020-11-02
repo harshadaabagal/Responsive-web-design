@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="John Doe">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All About Balloons LLC</title>
+	<link rel="icon" href="assets/images/favicon.ico">
+
+	<!--Web font css-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900" rel="stylesheet" type="text/css">
+	<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">-->
+
+	<!--Bootstrap CSS-->
+	<!--<link href="assets/css/bootstrap.css" rel="stylesheet">-->
+
+	<!--Custom CSS-->
+	<link href="assets/css/master.css" rel="stylesheet">
+	<link href="assets/css/animate.css" rel="stylesheet">
+	<!--Icon font css-->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+	<link href="assets/css/font-awesome.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<header class="main-header clearfix">
+    <div class="container">
+        <div class="logo">
+            <figure> <a href="index.html"> <img src="assets/images/logo.png" alt="All About Balloons logo"/> </a> </figure>
+        </div>
+        <nav class="navbar clearfix"> <a href="javascript:void(0);" class="icon navbar-toggle" onclick="myFunction()"><i class="fa fa-bars" aria-hidden="true"></i> </a>
+            <div class="topnav" id="myTopnav">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#">About us </a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<!--Slider section-->
+<section class="slider">
+    <ul>
+        <li>
+            <figure><img src="assets/images/slide-1.jpg" class="center-block" alt="slide 1"/></figure>
+        </li>
+    </ul>
+</section>
+<!--welcome block-->
+<section class="intro-section">
+    <div class="container">
+        <h1>Welcome to our website</h1>
+        <p>Lorem ipsum dolor sit amet secteture as a adipisicing elit, sed do eiusmod a dolore magna aliqua. Lorem ipsum dolr or sit as a adipisicing elit.  Sed do eiusmod a dolore magna aliqua. Lorem ipsum dolr or sit as a adipisicing elit.  Sed do eiusmod a dolore magna aliqua. Lorem ipsum dolr or sit as a adipisicing elit</p>
+    </div>
+</section>
+<!--our services-->
+<section class="our-services-section clearfix">
+    <div class="container">
+        <header>
+            <h2>Our Services</h2>
+            <p>Dolore magna aliqua. Lorem ipsum dolr or sit as a adipisicing elit.  Sed do eiusmod a dolore magna aliqua. Lorem ipsum dolr or sit as a adipisicing elit.  Sed do eiusmod a dolore magna aliqua. Lorem ipsum dolr or sit as a adipisicing elit</p>
+        </header>
+        <ul class="clearfix">
+            <li class="wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div class="service-box">
+                    <h3>Text will be here</h3>
+                    <figure class="image-outer"><img src="assets/images/adam.jpg" alt="sample image"></figure>
+                    <p>Sed do eiusmod a dolore magna aliqua. Lorem ipsum dolr or sit as a adipisicing elit</p>
+                    <a href="#" class="btn">Read More</a> </div>
+            </li>
+             <li class="wow fadeInDown" data-wow-duration="2000ms" data-wow-delay="600ms">
+                <div class="service-box">
+                    <h3>Text will be here</h3>
+                    <figure class="image-outer"><img src="assets/images/alan.jpg" alt="sample image"></figure>
+                    <p>Lorem ipsum dolor sit amet secteture as a adipisicing elit, sed do eiusmod a dolore magna aliqua. Lorem ipsum dolr or sit as a adipisicing elit</p>
+                    <a href="#" class="btn">Read More</a> </div>
+            </li>
+             <li class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+                <div class="service-box">
+                    <h3>Text will be here</h3>
+                    <figure class="image-outer"><img src="assets/images/susana.jpg" alt="sample image"></figure>
+                    <p>Amet secteture as a adipisicing elit, sed do eiusmod. </p>
+                    <a href="#" class="btn">Read More</a> </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!--footer -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="copyright">
+            <p>&copy; Copyright 2017 All About Balloons LLC All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="assets/js/wow.min.js"></script> 
+<script>
+	jQuery(function($) {
+	//Initiat WOW JS
+	new WOW().init();
+	
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollup').fadeIn();
+			} else {
+				$('.scrollup').fadeOut();
+			}
+		});
+		$('.scrollup').click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 1000);
+				return false;
+		});
+	
+	
+});
+</script>
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className == "topnav") {
+		x.className += " responsive";
+	} else {
+		x.className = "topnav";
+	}
+}
+</script>
+</body>
+</html>
